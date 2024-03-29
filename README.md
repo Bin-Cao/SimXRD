@@ -7,6 +7,7 @@
 
 ``` javascript
 from ase.db import connect
+from ase import Atoms
 
 databs = connect("./binxrd.db") 
 
@@ -16,7 +17,7 @@ latt_dis = [str([1, 2, 3, 4, 5, 6]),] # dis list, str
 _int = [str([1, 2, 3, 4, 5, 6]),] # intensity list, str
 _target = [str([221,1])] # target list, space group and crystal system
 _chem_form = [str(PbSO4),] # chemical formula list
-_simulation_param = [str(12,0.3,0.1,1.5 etc.)] # simulation parameters 
+_simulation_param = [str(10,20%,0.3,1.5)] # simulation parameters : GrainSize,orientation,thermo_vib,zero_shift
 
 for id in ids:
     index = id - 1 
