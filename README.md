@@ -41,7 +41,7 @@ for row in databs.select():
     # latt_dis, a list, lattice plane distances
     # intensity, a list, diffraction intensity
     # spg, int, space group number
-    # crysystem, int, crystal system 
+    # crysystem, int, crystal system number
 ```
 
 ## data source
