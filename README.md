@@ -28,10 +28,12 @@ for id in ids:
 
 ## db2XRD
 ``` javascript
+from ase.db import connect
 databs = connect("./binxrd.db")
 
 for row in databs.select():
-    element = eval(getattr(row, 'atom_list'))
+    atoms = row.toatoms()
+    element = atoms.get_chemical_symbols()
     latt_dis = eval(getattr(row, 'latt_dis'))
     intensity = eval(getattr(row, 'intensity'))
     spg = eval(getattr(row, 'tager'))[0]
