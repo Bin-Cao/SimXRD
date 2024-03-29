@@ -2,7 +2,8 @@
 
 ## XRD2db
 
-each crystal is simulated 50 times and saved sequentially, thus the first 50 spectra are same crysal and the next 50 spectra are other crysal and so on. 
+**Each crystal is simulated 50 times and saved sequentially; thus, the first 50 spectra belong to the same crystal, followed by the next 50 spectra representing another crystal, and so forth.**
+
 
 ``` javascript
 from ase.db import connect
@@ -15,7 +16,7 @@ latt_dis = [str([1, 2, 3, 4, 5, 6]),] # dis list, str
 _int = [str([1, 2, 3, 4, 5, 6]),] # intensity list, str
 _target = [str([221,1])] # target list, space group and crystal system
 _chem_form = [str(PbSO4),] # chemical formula list
-_simulation_param = [str(12552135)] # simulation parameters 
+_simulation_param = [str(12,0.3,0.1,1.5 etc.)] # simulation parameters 
 
 for id in ids:
     index = id - 1 
@@ -42,3 +43,6 @@ for row in databs.select():
     # spg, int, space group number
     # crysystem, int, crystal system 
 ```
+
+## data source
+The dataset, containing 154,718*50 data of XRD spectra and chemical composition, is retrieved from the [Materials Project (MP) database](https://materialsproject.org) and simulated by [WPEM](https://github.com/WPEM)
