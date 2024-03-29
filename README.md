@@ -11,7 +11,6 @@ from ase import Atoms
 
 databs = connect("./binxrd.db") 
 
-ids = [1,2,3] # id list
 atom_list = [['C', 'H', 'O'],] # element list
 latt_dis = [str([1, 2, 3, 4, 5, 6]),] # dis list, str
 _int = [str([1, 2, 3, 4, 5, 6]),] # intensity list, str
