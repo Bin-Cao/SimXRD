@@ -31,7 +31,7 @@ for id in ids:
 databs = connect("./binxrd.db")
 
 for row in databs.select():
-    element = atoms.get_chemical_symbols()
+    element = eval(getattr(row, 'atom_list'))
     latt_dis = eval(getattr(row, 'latt_dis'))
     intensity = eval(getattr(row, 'intensity'))
     spg = eval(getattr(row, 'tager'))[0]
