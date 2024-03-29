@@ -2,7 +2,7 @@
 
 ## XRD2db
 
-**Each crystal is simulated 50 times and saved sequentially; thus, the first 50 spectra belong to the same crystal, followed by the next 50 spectra representing another crystal, and so forth.**
+**Each crystal is simulated 30 times and saved sequentially; thus, the first 30 spectra belong to the same crystal, followed by the next 30 spectra representing another crystal, and so forth.**
 
 
 ``` javascript
@@ -45,4 +45,4 @@ for row in databs.select():
 ```
 
 ## data source
-The dataset, containing 154,718*50 data of XRD spectra and chemical composition, is retrieved from the [Materials Project (MP) database](https://materialsproject.org) and simulated by [WPEM](https://github.com/WPEM)
+The dataset, containing 154,718*30 data of XRD spectra and chemical composition, is retrieved from the [Materials Project (MP) database](https://materialsproject.org) and simulated by [WPEM](https://github.com/WPEM)
