@@ -2,7 +2,7 @@
 Description: The test_binxrd database houses **119,569** X-ray diffraction (XRD) simulation spectra in **d-I format**. This dataset serves as a testing dataset, wherein each crystal corresponds to only one spectrum.
 
 ### Data Sharing:
-You can access the data via the provided **google drive link** or request a copy via email for delivery on a **physical hard drive**. https://drive.google.com/drive/folders/1vMFfV6eGBVkY73ltv7yFuEmM1gNt6MWs?usp=sharing
+You can access the data via the provided **google drive link** or request a copy via email for delivery on a **physical hard drive**. https://drive.google.com/drive/folders/1vMFfV6eGBVkY73ltv7yFuEmM1gNt6MWs?usp=sharing （**Please note your name, organization and purpose of application**）
 
 ### Contact Information:
 **Mr. Cao Bin**
