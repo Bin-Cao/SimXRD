@@ -1,3 +1,4 @@
+# All data are open-sourced on ONE drive. 
 ## Training data
 + [train_1_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
 + [train_2_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
@@ -11,7 +12,7 @@
 ## Testing data
 + [test_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/test_db) **119,569*1** data
 
-**All data are open-sourced on ONE drive. Please email me your name, organization, and the purpose of your application in order to receive the password.**
+**Please email me your name, organization, and the purpose of your application in order to receive the password.**
 
 ## XRD2db
 
