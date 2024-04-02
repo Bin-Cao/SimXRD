@@ -9,7 +9,7 @@
 (**119,569*30** data of XRD spectra)
   
 ## Testing data
-+ [test_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/code_test) **119,569*1** data
++ [test_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/test_db) **119,569*1** data
 
 ## XRD2db
 
