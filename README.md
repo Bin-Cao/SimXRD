@@ -11,6 +11,8 @@
 ## Testing data
 + [test_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/test_db) **119,569*1** data
 
+**All data are open-sourced on ONE drive. Please email me your name, organization, and the purpose of your application in order to receive the password.**
+
 ## XRD2db
 
 **Each crystal is simulated 30 times and saved sequentially. Therefore, the first 30 spectra belong to the same crystal, followed by the next 30 spectra representing another crystal, and so forth.**
