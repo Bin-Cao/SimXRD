@@ -1,3 +1,7 @@
+## Training data
+...
+## Testing data
+[test_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/code_test) **119,569*1** data
 
 ## XRD2db
 
