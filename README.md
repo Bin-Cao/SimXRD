@@ -1,4 +1,3 @@
-# simXRDdatabase
 
 ## XRD2db
 
