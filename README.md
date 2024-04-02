@@ -1,10 +1,10 @@
 ## Training data
-+ train_1_binxrd.db **119,569*5** data
-+ train_2_binxrd.db **119,569*5** data
-+ train_3_binxrd.db **119,569*5** data
-+ train_4_binxrd.db **119,569*5** data
-+ train_5_binxrd.db **119,569*5** data
-+ train_6_binxrd.db **119,569*5** data
++ [train_1_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
++ [train_2_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
++ [train_3_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
++ [train_4_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
++ [train_5_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
++ [train_6_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
 
 (**119,569*30** data of XRD spectra)
   
