@@ -20,7 +20,7 @@
 
 We recommend utilizing this **testing dataset (119,569 entries)** to compare the predictive capabilities of different models.
 
-**Please email me your name, organization, and the purpose of your application in order to receive the password. Email name: [Application for acquisition/SimXRDdb]**
+**Please email me your name, organization, and the purpose of your application in order to receive the password. Email name: Application for acquisition/SimXRDdb**
 
 (***X** denotes the simulation of one crystal under varied conditions, resulting in X distinct spectra.)
 ## data source
