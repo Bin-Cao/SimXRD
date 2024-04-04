@@ -12,6 +12,8 @@
 ## testing data
 + [test_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/test_db) **119,569*1** data
 
+We recommend utilizing this **testing dataset (119,569 entries)** to compare the predictive capabilities of different models.
+
 **Please email me your name, organization, and the purpose of your application in order to receive the password.**
 
 ## data source
