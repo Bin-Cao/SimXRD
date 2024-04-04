@@ -13,7 +13,7 @@
 + [train_5_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
 + [train_6_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
 
-(**119,569*30** data of XRD spectra)
+(**119,569*30** data of XRD spectra, ***X** denotes the simulation of one crystal under varied conditions, resulting in X distinct spectra.)
   
 ## testing data
 + [test_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/test_db) **119,569*1** data
@@ -22,6 +22,7 @@ We recommend utilizing this **testing dataset (119,569 entries)** to compare the
 
 **Please email me your name, organization, and the purpose of your application in order to receive the password.**
 
+(***X** denotes the simulation of one crystal under varied conditions, resulting in X distinct spectra.)
 ## data source
 The dataset, containing 119,569*30 data of XRD spectra and chemical composition, is retrieved from the [Materials Project (MP) database](https://materialsproject.org) and simulated by [WPEM](https://github.com/WPEM)
 
