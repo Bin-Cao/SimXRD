@@ -20,6 +20,11 @@
 
 We recommend utilizing this **testing dataset (119,569 entries)** to compare the predictive capabilities of different models.
 
+## testing data without target
++ [testNOtgt.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/test_db) **119,569*1** data
+
+We highly recommend utilizing the **testNOtgt.db dataset**, comprising 119,569 entries, to assess the predictive generalizability of your model. This dataset lacks a target variable and is randomly ordered. Please feel free to email me your predictions (in npy or csv format), and I will evaluate the accuracy of your model accordingly.
+
 **Please email me your name, organization, and the purpose of your application in order to receive the password. Email name: Application for acquisition/SimXRDdb**
 
 (***X** denotes the simulation of one crystal under varied conditions, resulting in X distinct spectra.)
