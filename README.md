@@ -18,7 +18,7 @@
 The dataset, containing 119,569*30 data of XRD spectra and chemical composition, is retrieved from the [Materials Project (MP) database](https://materialsproject.org) and simulated by [WPEM](https://github.com/WPEM)
 
 ## cite
-Cao, B. (2024). X-ray diffraction simulation stratra database. Retrieved from https://github.com/Bin-Cao/SimXRDdb.
+Cao, B. (2024). **SimXRDdb: X-ray diffraction simulation spectra database.** Retrieved from https://github.com/Bin-Cao/SimXRDdb.
 
 ## contributing 
 Contribution and suggestions are always welcome. In addition, we are also looking for research collaborations. You can submit issues for suggestions, questions, bugs, and feature requests, or submit pull requests to contribute directly. You can also contact the authors for research collaboration.
