@@ -14,14 +14,21 @@
 + [train_6_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
 
 (**119,569*30** data of XRD spectra, ***X** denotes the simulation of one crystal under varied conditions, resulting in X distinct spectra.)
-  
-## testing data
-+ [test_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/test_db) **119,569*1** data
 
-We recommend utilizing this **testing dataset (119,569 entries)** to compare the predictive capabilities of different models.
+## validation data
++ [test_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/val_db) **119,569*1** data
+
+We recommend utilizing this **validation dataset (119,569 entries)** as the validation set.
+
+
+## testing data
++ [test_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/test_db) **119,569*2** data
+
+We recommend utilizing this **testing dataset (119,569*2 entries)** to compare the predictive capabilities of different models.
+
 
 ## testing data without target
-+ [testNOtgt.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/test_db) **119,569*1** data
++ [testNOtgt.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/testNOtgt_db) **119,569*1** data
 
 We highly recommend utilizing the **testNOtgt.db dataset**, comprising 119,569 entries, to assess the predictive generalizability of your model. This dataset lacks a target variable and is randomly ordered. Please feel free to email me your predictions (in npy or csv format), and I will evaluate the accuracy of your model accordingly.
 
