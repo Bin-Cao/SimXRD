@@ -16,7 +16,7 @@
 (**119,569*30** data of XRD spectra, ***X** denotes the simulation of one crystal under varied conditions, resulting in X distinct spectra.)
 
 ## validation data
-+ [test_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/val_db) **119,569*1** data
++ [val_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/val_db) **119,569*1** data
 
 We recommend utilizing this **validation dataset (119,569 entries)** as the validation set.
 
