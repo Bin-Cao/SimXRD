@@ -46,7 +46,7 @@ Contribution and suggestions are always welcome. In addition, we are also lookin
 
 ## xrd2db
 
-**Each crystal is simulated 30 times and saved sequentially. Therefore, the first 30 spectra belong to the same crystal, followed by the next 30 spectra representing another crystal, and so forth.**
+**Each crystal is simulated x times and saved sequentially. Therefore, the first x spectra belong to the same crystal, followed by the next x spectra representing another crystal, and so forth.**
 
 
 ``` javascript
