@@ -1,5 +1,5 @@
-# ALL DATA are OPEN-sourced on ONE drive. 
-## dataset
+
+## SimXRD-4M
 **Data Description:** Crystalline materials are categorized into 230 space groups, each representing a distinct symmetry class. XRD spectral data, which correspond to the crystal structure, serve as vital tools for studying these materials. However, spectral data are influenced by various factors such as the testing environment (instrumentation), light source (X-ray), and sample characteristics (grain size, orientation, etc.). Consequently, they exhibit varying characteristics, including changes in intensity values, peak broadening, etc., posing challenges for accurate phase identification. This database aims to facilitate model training by providing diffraction spectrum data under diverse environmental conditions. The ultimate goal is for the model to accurately identify the correct space group based on spectral data.
 
 **Task Description:** Input consists of sequence data for 230 classification problems. For additional data requirements, please reach out to the author.
@@ -32,9 +32,8 @@ We recommend utilizing this **testing dataset (119,569*2 entries)** to compare t
 
 We highly recommend utilizing the **testNOtgt.db dataset**, comprising 119,569 entries, to assess the predictive generalizability of your model. This dataset lacks a target variable and is randomly ordered. Please feel free to email me your predictions (in npy or csv format), and I will evaluate the accuracy of your model accordingly.
 
-**Please email me your name, organization, and the purpose of your application in order to receive the password. Email name: Application for acquisition/SimXRDdb**
-
 (***X** denotes the simulation of one crystal under varied conditions, resulting in X distinct spectra.)
+
 ## data source
 The dataset, containing 119,569*30 data of XRD spectra and chemical composition, is retrieved from the [Materials Project (MP) database](https://materialsproject.org) and simulated by [WPEM](https://github.com/WPEM)
 
