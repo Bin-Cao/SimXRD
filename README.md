@@ -38,12 +38,6 @@ We highly recommend utilizing the **testNOtgt.db dataset**, comprising 119,569 e
 ## data source
 The dataset, containing 119,569*30 data of XRD spectra and chemical composition, is retrieved from the [Materials Project (MP) database](https://materialsproject.org) and simulated by [WPEM](https://github.com/WPEM)
 
-## cite
-Cao, B. (2024). **SimXRDdb: X-ray diffraction simulation spectra database.** Retrieved from https://github.com/Bin-Cao/SimXRD.
-
-## contributing 
-Contribution and suggestions are always welcome. In addition, we are also looking for research collaborations. You can submit issues for suggestions, questions, bugs, and feature requests, or submit pull requests to contribute directly. You can also contact the authors for research collaboration.
-
 
 ## db2xrd
 ``` javascript
