@@ -1,5 +1,5 @@
 # SimXRD-4M
-## database homepage [Benchmark](https://github.com/compasszzn/XRDBench)
+## database | [benchmark](https://github.com/compasszzn/XRDBench)
 
 **Open Source:**  SimXRD-4M is freely available on our website (http://simxrd.caobin.asia/).
 
