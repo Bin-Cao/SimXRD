@@ -61,4 +61,18 @@ for row in databs.select():
     # crysystem, int, crystal system number
 ```
 
+## acquire the review data by Croissant
+
++ [review data](https://huggingface.co/datasets/caobin/SimXRDreview)
+
+
+``` javascript
+
+import mlcroissant as mlc
+url = "https://huggingface.co/datasets/caobin/SimXRDreview/raw/main/simxrd_croissant.json"
+
+
+dataset_info = mlc.Dataset(url).metadata.to_json
+print(dataset_info)
+```
 
