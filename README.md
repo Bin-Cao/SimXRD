@@ -5,7 +5,14 @@
 
 **Data Description:** Crystalline materials are categorized into 230 space groups, each representing a distinct symmetry class. XRD spectral data, which correspond to the crystal structure, serve as vital tools for studying these materials. However, spectral data are influenced by various factors such as the testing environment (instrumentation), light source (X-ray), and sample characteristics (grain size, orientation, etc.). Consequently, they exhibit varying characteristics, including changes in intensity values, peak broadening, etc., posing challenges for accurate phase identification. This database aims to facilitate model training by providing diffraction spectrum data under diverse environmental conditions. The ultimate goal is for the model to accurately identify the correct space group based on spectral data.
 
-## db2xrd
+## installation
+
+You'll need to install the following libraries for processing db file:
+
+- ase
+- tqdm
+
+## readin data
 ``` javascript
 from ase.db import connect
 databs = connect("./binxrd.db")
