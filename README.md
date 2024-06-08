@@ -1,47 +1,18 @@
 # SimXRD-4M
-## database
+## database | [benchmark](https://github.com/compasszzn/XRDBench)
 
 **Open Source:**  SimXRD-4M is freely available on our website (http://simxrd.caobin.asia/).
 
 **Data Description:** Crystalline materials are categorized into 230 space groups, each representing a distinct symmetry class. XRD spectral data, which correspond to the crystal structure, serve as vital tools for studying these materials. However, spectral data are influenced by various factors such as the testing environment (instrumentation), light source (X-ray), and sample characteristics (grain size, orientation, etc.). Consequently, they exhibit varying characteristics, including changes in intensity values, peak broadening, etc., posing challenges for accurate phase identification. This database aims to facilitate model training by providing diffraction spectrum data under diverse environmental conditions. The ultimate goal is for the model to accurately identify the correct space group based on spectral data.
 
-**Task Description:** Input consists of sequence data for 230 classification problems. For additional data requirements, please reach out to the author.
+## installation
 
+You'll need to install the following libraries for processing db file:
 
-## training data
-+ [train_1_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
-+ [train_2_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
-+ [train_3_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
-+ [train_4_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
-+ [train_5_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
-+ [train_6_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/train_db) **119,569*5** data
+- ase
+- tqdm
 
-(**119,569*30** data of XRD spectra, ***X** denotes the simulation of one crystal under varied conditions, resulting in X distinct spectra.)
-
-## validation data
-+ [val_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/val_db) **119,569*1** data
-
-We recommend utilizing this **validation dataset (119,569 entries)** as the validation set.
-
-
-## testing data
-+ [test_binxrd.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/test_db) **119,569*2** data
-
-We recommend utilizing this **testing dataset (119,569*2 entries)** to compare the predictive capabilities of different models.
-
-
-## testing data without target
-+ [testNOtgt.db](https://github.com/Bin-Cao/SimXRDdb/tree/main/testNOtgt_db) **119,569*1** data
-
-We highly recommend utilizing the **testNOtgt.db dataset**, comprising 119,569 entries, to assess the predictive generalizability of your model. This dataset lacks a target variable and is randomly ordered. Please feel free to email me your predictions (in npy or csv format), and I will evaluate the accuracy of your model accordingly.
-
-(***X** denotes the simulation of one crystal under varied conditions, resulting in X distinct spectra.)
-
-## data source
-The dataset, containing 119,569*30 data of XRD spectra and chemical composition, is retrieved from the [Materials Project (MP) database](https://materialsproject.org) and simulated by [WPEM](https://github.com/WPEM)
-
-
-## db2xrd
+## readin data
 ``` javascript
 from ase.db import connect
 databs = connect("./binxrd.db")
@@ -61,4 +32,28 @@ for row in databs.select():
     # crysystem, int, crystal system number
 ```
 
+## acquire the review data by Croissant
+
++ [review data](https://huggingface.co/datasets/caobin/SimXRDreview)
+
+
+
+``` javascript
+# 1. Point to the Croissant file
+    import mlcroissant as mlc
+    url = "https://huggingface.co/datasets/caobin/SimXRDreview/raw/main/simxrd_croissant.json"
+
+# 2. Inspect metadata
+  dataset_info = mlc.Dataset(url).metadata.to_json
+  print(dataset_info)
+
+  from dataset.parse import load_dataset,bar_progress # defined in our github : https://github.com/compasszzn/XRDBench/blob/main/dataset/parse.py
+  for file_info in dataset_info['distribution']:
+      wget.download(file_info['contentUrl'], './', bar=bar_progress)
+
+# 3. Use Croissant dataset in your ML workload
+  train_loader = DataLoader(load_dataset(name='train.tfrecord'), batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers)
+  val_loader = DataLoader(load_dataset(name='val.tfrecord'), batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers,drop_last=False)
+  test_loader = DataLoader(load_dataset(name='test.tfrecord'), batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers,drop_last=False)
+```
 
