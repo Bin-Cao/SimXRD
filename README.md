@@ -11,6 +11,13 @@ You'll need to install the following libraries for processing db file:
 
 - ase
 - tqdm
+  
+## kaggle Competition
+## Kaggle Competition Announcement
+
+To benchmark advanced models and further their development, we are launching a Kaggle competition for space group classification. Participants are invited to upload their predictions based on the [testNOtgt data](https://github.com/Bin-Cao/SimXRD/tree/main/testNOtgt_db) using their trained models. Submit your results on the [Leaderboard](https://www.kaggle.com/competitions/simxrd/leaderboard). 
+
+For more detailed information, please visit the [Kaggle competition page](https://www.kaggle.com/competitions/simxrd).
 
 ## readin data
 ``` javascript
