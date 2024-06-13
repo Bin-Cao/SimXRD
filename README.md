@@ -17,6 +17,8 @@ You'll need to install the following libraries for processing db file:
 
 To benchmark advanced models and further their development, we are launching a Kaggle competition for space group classification. Participants are invited to upload their predictions based on the [testNOtgt data](https://github.com/Bin-Cao/SimXRD/tree/main/testNOtgt_db) using their trained models. Submit your results on the [Leaderboard](https://www.kaggle.com/competitions/simxrd/leaderboard). 
 
+<img width="973" alt="Screenshot 2024-06-13 at 22 15 21" src="https://github.com/Bin-Cao/SimXRD/assets/86995074/e125623f-d695-4624-b6fc-3d0604dc2846">
+
 For more detailed information, please visit the [Kaggle competition page](https://www.kaggle.com/competitions/simxrd).
 
 ## readin data
