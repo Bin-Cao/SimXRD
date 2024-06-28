@@ -7,7 +7,7 @@
 
 ## paper 
 + [arxiv](https://arxiv.org/pdf/2406.15469v1)
-+ 
+  
 ``` javascript
 @misc{cao2024simxrd4mbigsimulatedxray,
       title={SimXRD-4M: Big Simulated X-ray Diffraction Data Accelerate the Crystalline Symmetry Classification}, 
