@@ -7,7 +7,8 @@
 
 ## paper 
 + [arxiv](https://arxiv.org/pdf/2406.15469v1)
-、、、
++ 
+``` javascript
 @misc{cao2024simxrd4mbigsimulatedxray,
       title={SimXRD-4M: Big Simulated X-ray Diffraction Data Accelerate the Crystalline Symmetry Classification}, 
       author={Bin Cao and Yang Liu and Zinan Zheng and Ruifeng Tan and Jia Li and Tong-yi Zhang},
@@ -18,7 +19,7 @@
       url={https://arxiv.org/abs/2406.15469}, 
 }
 
-、、、
+```
 ## installation
 
 You'll need to install the following libraries for processing db file:
