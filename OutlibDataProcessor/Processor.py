@@ -15,7 +15,7 @@ valdb_time = [1]  # Simulation times for validation database
 testdb = ['./test.db']
 testdb_time = [2]  # Simulation times for test database
 
-split_ratio = [0.6, 0.2, 0.2]  # Ratio for splitting the data into training, validation, and test sets
+split_ratio = [0.7, 0.1, 0.2]  # Ratio for splitting the data into training, validation, and test sets
 
 def OLdataset(traindb, valdb, testdb, traindb_time, valdb_time, testdb_time, split_ratio):
     # Combine all database paths and simulation times into single lists
