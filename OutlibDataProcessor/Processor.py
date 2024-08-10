@@ -8,8 +8,8 @@ from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor
 
 # Directory paths for the database files
-traindb = ['./train1.db', './train2.db', './train3.db', './train4.db', './train5.db', './train6.db']
-traindb_time = [5, 5, 5, 5, 5, 5]  # Simulation times for each training database
+traindb = ['./train1.db', './train2.db', ]
+traindb_time = [5, 5, ]  # Simulation times for each training database
 valdb = ['./val.db']
 valdb_time = [1]  # Simulation times for validation database
 testdb = ['./test.db']
