@@ -7,16 +7,6 @@ from ase.db import connect
 from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor
 
-# Directory paths for the database files
-traindb = ['./train1.db', './train2.db', ]
-traindb_time = [5, 5, ]  # Simulation times for each training database
-valdb = ['./val.db']
-valdb_time = [1]  # Simulation times for validation database
-testdb = ['./test.db']
-testdb_time = [2]  # Simulation times for test database
-
-split_ratio = [0.7, 0.1, 0.2]  # Ratio for splitting the data into training, validation, and test sets
-
 def OLdataset(traindb, valdb, testdb, traindb_time, valdb_time, testdb_time, split_ratio):
     # Combine all database paths and simulation times into single lists
     ILdataset = traindb + valdb + testdb
@@ -30,9 +20,9 @@ def OLdataset(traindb, valdb, testdb, traindb_time, valdb_time, testdb_time, spl
     val_num = int(total_entries * split_ratio[1])
     test_num = total_entries - val_num - train_num
 
-    OLtraindb = connect('./OLtraindb')
-    OLvaldb = connect('./OLvaldb')
-    OLtestdb = connect('./OLtestdb')
+    OLtraindb = connect('./OLtrain.db')
+    OLvaldb = connect('./OLval.db')
+    OLtestdb = connect('./OLtest.db')
 
     def process_database(index):
         dbfile = connect(ILdataset[index])
@@ -81,4 +71,15 @@ def OLdataset(traindb, valdb, testdb, traindb_time, valdb_time, testdb_time, spl
     return True
 
 if __name__ == '__main__':
+
+    # Directory paths for the database files
+    traindb = ['./train1.db', './train2.db', ]
+    traindb_time = [5, 5, ]  # Simulation times for each training database
+    valdb = ['./val.db']
+    valdb_time = [1]  # Simulation times for validation database
+    testdb = ['./test.db']
+    testdb_time = [2]  # Simulation times for test database
+
+    split_ratio = [0.7, 0.1, 0.2]  # Ratio for splitting the data into training, validation, and test sets
+
     OLdataset(traindb, valdb, testdb, traindb_time, valdb_time, testdb_time, split_ratio)
