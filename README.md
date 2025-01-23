@@ -1,30 +1,34 @@
 # SimXRD-4M
-## The Official Implementation of SimXRD | [Paper](https://openreview.net/forum?id=mkuB677eMM) # ICLR2025 | [benchmark](https://github.com/compasszzn/XRDBench)
 
-**Open Source:**  SimXRD-4M is freely available on our website (http://simxrd.caobin.asia/) & [Huggingface](https://huggingface.co/AI4Spectro).
+## The Official Implementation of SimXRD | [Paper](https://openreview.net/forum?id=mkuB677eMM) | ICLR 2025 | [benchmark](https://github.com/compasszzn/XRDBench)
 
-**Data Description:** Crystalline materials are categorized into 230 space groups, each representing a distinct symmetry class. XRD spectral data, which correspond to the crystal structure, serve as vital tools for studying these materials. However, spectral data are influenced by various factors such as the testing environment (instrumentation), light source (X-ray), and sample characteristics (grain size, orientation, etc.). Consequently, they exhibit varying characteristics, including changes in intensity values, peak broadening, etc., posing challenges for accurate phase identification. This database aims to facilitate model training by providing diffraction spectrum data under diverse environmental conditions. The ultimate goal is for the model to accurately identify the correct space group based on spectral data.
+**Open Source:** SimXRD-4M is freely available on our website ([http://simxrd.caobin.asia/](http://simxrd.caobin.asia/)) & [Huggingface](https://huggingface.co/AI4Spectro).
 
+**Data Description:** Crystals are categorized into 230 space groups, each representing a distinct symmetry catrgory. XRD patterns, which correspond to the crystal structure, serve as vital tools for studying these materials. However, XRD patterns are influenced by various factors such as the testing environment (instrumentation), light source (X-ray), and sample characteristics (grain size, orientation, etc.). Consequently, they exhibit varying characteristics, including changes in intensity values, peak broadening, etc., posing challenges for accurate phase identification. This database aims to facilitate model training by providing diffraction spectrum data under diverse environmental conditions. The ultimate goal is for the model to accurately identify the correct space group based on XRD patterns.
 
-## installation
+---
 
-You'll need to install the following libraries for processing db file:
+## Installation
+
+You'll need to install the following libraries for processing the database file:
 
 - ase
 - tqdm
-  
 
-## kaggle competition announcement
+```bash
+pip install ase tqdm
+```
 
-To benchmark advanced models and further their development, we are launching a Kaggle competition for space group classification. Participants are invited to upload their predictions based on the [testNOtgt data](https://github.com/Bin-Cao/SimXRD/tree/main/testNOtgt_db) using their trained models. Submit your results on the [Leaderboard](https://www.kaggle.com/competitions/simxrd/leaderboard). 
+Kaggle Competition Announcement
 
-<img width="973" alt="Screenshot 2024-06-13 at 22 15 21" src="https://github.com/Bin-Cao/SimXRD/assets/86995074/e125623f-d695-4624-b6fc-3d0604dc2846">
+To benchmark advanced models and further their development, we are launching a Kaggle competition for space group classification. Participants are invited to upload their predictions based on the testNOtgt data using their trained models. Submit your results on the Leaderboard.
+https://github.com/Bin-Cao/SimXRD/assets/86995074/e125623f-d695-4624-b6fc-3d0604dc2846
+For more detailed information, please visit the Kaggle competition page.
 
-For more detailed information, please visit the [Kaggle competition page](https://www.kaggle.com/competitions/simxrd).
-
-## readin data
-``` javascript
+Reading Data
+```Python
 from ase.db import connect
+
 databs = connect("./binxrd.db")
 
 for row in databs.select():
@@ -42,28 +46,41 @@ for row in databs.select():
     # crysystem, int, crystal system number
 ```
 
-## acquire the review data by Croissant
 
-+ [review data](https://huggingface.co/datasets/caobin/SimXRDreview)
+Dataset Distribution
+Database: [test_binxrd]
+Description: The test_binxrd database houses 119,569*2 X-ray diffraction (XRD) simulation spectra in d-I format. This dataset serves as a testing dataset, wherein each crystal corresponds to only one spectrum.
+
+Database: [train_binxrd]
+Description: The train_binxrd database houses 119,569*30 X-ray diffraction (XRD) simulation spectra in d-I format. This dataset serves as a training dataset, wherein each crystal corresponds to 5 spectra in each file.
+
+Database: [val_binxrd]
+Description: The val_binxrd database houses 119,569 X-ray diffraction (XRD) simulation spectra in d-I format. This dataset serves as a validation dataset, wherein each crystal corresponds to only one spectrum.
+
+Database: [testNOtgt]
+Description: The testNOtgt database houses 119,569 X-ray diffraction (XRD) simulation spectra in d-I format. This dataset serves as a testing dataset, which lacks a target variable and is randomly ordered.
 
 
-
-``` javascript
+Acquire Review Data by Croissant
+Review Data
+```Python
 # 1. Point to the Croissant file
-    import mlcroissant as mlc
-    url = "https://huggingface.co/datasets/caobin/SimXRDreview/raw/main/simxrd_croissant.json"
+import mlcroissant as mlc
+url = "https://huggingface.co/datasets/caobin/SimXRDreview/raw/main/simxrd_croissant.json"
+
 
 # 2. Inspect metadata
-  dataset_info = mlc.Dataset(url).metadata.to_json
-  print(dataset_info)
+dataset_info = mlc.Dataset(url).metadata.to_json()
+print(dataset_info)
 
-  from dataset.parse import load_dataset,bar_progress # defined in our github : https://github.com/compasszzn/XRDBench/blob/main/dataset/parse.py
-  for file_info in dataset_info['distribution']:
-      wget.download(file_info['contentUrl'], './', bar=bar_progress)
+from dataset.parse import load_dataset, bar_progress  # defined in our github: https://github.com/compasszzn/XRDBench/blob/main/dataset/parse.py
+for file_info in dataset_info['distribution']:
+    wget.download(file_info['contentUrl'], './', bar=bar_progress)
 
 # 3. Use Croissant dataset in your ML workload
-  train_loader = DataLoader(load_dataset(name='train.tfrecord'), batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers)
-  val_loader = DataLoader(load_dataset(name='val.tfrecord'), batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers,drop_last=False)
-  test_loader = DataLoader(load_dataset(name='test.tfrecord'), batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers,drop_last=False)
-```
+from torch.utils.data import DataLoader
 
+train_loader = DataLoader(load_dataset(name='train.tfrecord'), batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers)
+val_loader = DataLoader(load_dataset(name='val.tfrecord'), batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers, drop_last=False)
+test_loader = DataLoader(load_dataset(name='test.tfrecord'), batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers, drop_last=False)
+```
