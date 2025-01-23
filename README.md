@@ -1,5 +1,5 @@
 # SimXRD-4M
-## database | [benchmark](https://github.com/compasszzn/XRDBench)
+## The Official Implementation of SimXRD | [Paper](https://openreview.net/forum?id=mkuB677eMM) # ICLR2025 | [benchmark](https://github.com/compasszzn/XRDBench)
 
 **Open Source:**  SimXRD-4M is freely available on our website (http://simxrd.caobin.asia/) & [Huggingface](https://huggingface.co/AI4Spectro).
 
