@@ -22,7 +22,6 @@ pip install ase tqdm
 Kaggle Competition Announcement
 
 To benchmark advanced models and further their development, we are launching a Kaggle competition for space group classification. Participants are invited to upload their predictions based on the testNOtgt data using their trained models. Submit your results on the Leaderboard.
-https://github.com/Bin-Cao/SimXRD/assets/86995074/e125623f-d695-4624-b6fc-3d0604dc2846
 For more detailed information, please visit the Kaggle competition page.
 
 Reading Data
