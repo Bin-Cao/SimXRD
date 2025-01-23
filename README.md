@@ -5,21 +5,7 @@
 
 **Data Description:** Crystalline materials are categorized into 230 space groups, each representing a distinct symmetry class. XRD spectral data, which correspond to the crystal structure, serve as vital tools for studying these materials. However, spectral data are influenced by various factors such as the testing environment (instrumentation), light source (X-ray), and sample characteristics (grain size, orientation, etc.). Consequently, they exhibit varying characteristics, including changes in intensity values, peak broadening, etc., posing challenges for accurate phase identification. This database aims to facilitate model training by providing diffraction spectrum data under diverse environmental conditions. The ultimate goal is for the model to accurately identify the correct space group based on spectral data.
 
-## paper 
-+ [arxiv](https://arxiv.org/pdf/2406.15469v1)
-  
-``` javascript
-@misc{cao2024simxrd4mbigsimulatedxray,
-      title={SimXRD-4M: Big Simulated X-ray Diffraction Data Accelerate the Crystalline Symmetry Classification}, 
-      author={Bin Cao and Yang Liu and Zinan Zheng and Ruifeng Tan and Jia Li and Tong-yi Zhang},
-      year={2024},
-      eprint={2406.15469},
-      archivePrefix={arXiv},
-      primaryClass={cond-mat.mtrl-sci},
-      url={https://arxiv.org/abs/2406.15469}, 
-}
 
-```
 ## installation
 
 You'll need to install the following libraries for processing db file:
