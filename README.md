@@ -46,7 +46,7 @@ for row in databs.select():
 ```
 
 ## Tutorials
-- **training**: [model_tutorial](./tutorial/Tutorial.ipynb)
+- **training**: [model_tutorial](./tutorial/template.ipynb)
 - **simulation**: [sim_tutorial](./sim/XRD.ipynb)
 - **high-throughput simulation**: [HTsim_tutorial](./sim/tutorial_sim.ipynb)
 
