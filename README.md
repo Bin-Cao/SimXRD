@@ -50,7 +50,8 @@ for row in databs.select():
 - **simulation**: [sim_tutorial](./sim/XRD.ipynb)
 - **high-throughput simulation**: [HTsim_tutorial](./sim/tutorial_sim.ipynb)
 
-(If you need the organized crystal database, please feel free to contact me to acquire it through a collaborative arrangement)
+## Crystal Data
+If you need the organized crystal database, visit here: https://huggingface.co/datasets/caobin/CrystDB
 
 Dataset Distribution
 
