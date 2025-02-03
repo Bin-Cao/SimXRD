@@ -2,7 +2,7 @@
 
 ## The Official Implementation of SimXRD | [Paper](https://openreview.net/forum?id=mkuB677eMM) | [DataBase](https://huggingface.co/AI4Spectro) | [Benchmark](https://github.com/compasszzn/XRDBench)
 
-**Open Source:** SimXRD-4M is freely available on our website ([http://simxrd.caobin.asia/](http://simxrd.caobin.asia/)) & [Huggingface](https://huggingface.co/AI4Spectro).
+**Open Source:** SimXRD-4M is freely available on [Huggingface](https://huggingface.co/AI4Spectro).
 
 **Data Description:** Crystals are categorized into 230 space groups, each representing a distinct symmetry catrgory. XRD patterns, which correspond to the crystal structure, serve as vital tools for studying these materials. However, XRD patterns are influenced by various factors such as the testing environment (instrumentation), light source (X-ray), and sample characteristics (grain size, orientation, etc.). Consequently, they exhibit varying characteristics, including changes in intensity values, peak broadening, etc., posing challenges for accurate phase identification. This database aims to facilitate model training by providing diffraction spectrum data under diverse environmental conditions. The ultimate goal is for the model to accurately identify the correct space group based on XRD patterns.
 
