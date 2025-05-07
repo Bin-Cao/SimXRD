@@ -1,6 +1,6 @@
-# SimXRD-4M ICLR 2025
+# SimXRD-4M [ICLR 2025](https://iclr.cc/virtual/2025/poster/28452)
 
-## The Official Implementation of SimXRD | [Paper](https://openreview.net/forum?id=mkuB677eMM) | [DataBase](https://huggingface.co/AI4Spectro) | [Benchmark](https://github.com/compasszzn/XRDBench) | [ICLR](https://iclr.cc/virtual/2025/poster/28452)
+## The Official Implementation of SimXRD | [Paper](https://openreview.net/forum?id=mkuB677eMM) | [DataBase](https://huggingface.co/AI4Spectro) | [Benchmark](https://github.com/compasszzn/XRDBench) 
 
 **Open Source:** SimXRD-4M is available on [Huggingface](https://huggingface.co/AI4Spectro).
 
