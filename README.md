@@ -1,3 +1,5 @@
+
+
 # SimXRD-4M [ICLR 2025](https://iclr.cc/virtual/2025/poster/28452)
 
 ## The Official Implementation of SimXRD | [Paper](https://openreview.net/forum?id=mkuB677eMM) | [DataBase](https://huggingface.co/AI4Spectro) | [Benchmark](https://github.com/compasszzn/XRDBench) 
@@ -91,3 +93,22 @@ train_loader = DataLoader(load_dataset(name='train.tfrecord'), batch_size=args.b
 val_loader = DataLoader(load_dataset(name='val.tfrecord'), batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers, drop_last=False)
 test_loader = DataLoader(load_dataset(name='test.tfrecord'), batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers, drop_last=False)
 ```
+
+---
+
+<table>
+  <tr>
+    <td width="160" align="center" valign="top">
+      <img src="https://github.com/user-attachments/assets/7e77bd5a-42d6-45db-b8e6-2c82cac81b9d" width="140" style="border-radius: 50%;"/>
+    </td>
+    <td valign="top">
+      <b>For any inquiries or assistance, feel free to contact Mr. CAO Bin at:</b><br>
+      📧 Email: <a href="mailto:bcao686@connect.hkust-gz.edu.cn">bcao686@connect.hkust-gz.edu.cn</a><br><br>
+      Cao Bin is a PhD candidate at the <b>Hong Kong University of Science and Technology (Guangzhou)</b>, 
+      under the supervision of Professor <a href="https://gbaaa.org.hk/en-us/article/67">Zhang Tong-Yi</a>. His research focuses on 
+      <b>AI for science</b>, especially intelligent crystal-structure analysis and discovery. 
+      Learn more about his work on his 
+      <a href="https://www.caobin.asia/">homepage</a>.
+    </td>
+  </tr>
+</table>
