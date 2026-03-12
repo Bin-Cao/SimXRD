@@ -10,6 +10,12 @@ from ase import Atoms
 from .utils.funs import *
 from .utils.MatgenKit import *
 from .utils.WPEMsim import *
+try:
+    from .utils.WPEMsim_torch import pxrdsim_torch
+    from .utils.funs_torch import init_precision, get_device, DTYPE
+    _TORCH_AVAILABLE = True
+except ImportError:
+    _TORCH_AVAILABLE = False
 import pandas as pd
 import json
 import copy
@@ -90,6 +96,26 @@ def parser(database,entry_id,grainsize=20,prefect_orientation=[0.1,0.1],thermo_v
         crystal_system = space_group_to_crystal_system(G_spacegroup)
         AtomCoordinates = c_atom_covert2WPEMformat(positions, N_symbols)
         x,y = pxrdsim(
+                        G_latt_vol, spacegroup_symbol, AtomCoordinates, G_latt_consts, crystal_system,
+                        grainsize, prefect_orientation, thermo_vibration, zero_shift,
+                        dis_detector2sample,half_height_slit_detector,half_height_sample,
+                        background_order,background_ratio, mixture_noise_ratio,  xrd
+                        )
+    elif sim_model == 'WPEM_torch':
+        if not _TORCH_AVAILABLE:
+            raise ImportError(
+                "PyTorch is required for sim_model='WPEM_torch'. "
+                "Install with: pip install torch")
+        G_latt_consts,_, c_atom = prim2conv(atoms,deformation,lattice_extinction_ratio,lattice_torsion_ratio,)
+        G_spacegroup = get_spacegroup(c_atom).no
+        N_symbols = c_atom.get_chemical_symbols()
+        positions = c_atom.get_scaled_positions()
+        G_latt_vol = c_atom.get_volume()
+        spacegroup_obj = get_spacegroup(c_atom)
+        spacegroup_symbol = spacegroup_obj.symbol[0]
+        crystal_system = space_group_to_crystal_system(G_spacegroup)
+        AtomCoordinates = c_atom_covert2WPEMformat(positions, N_symbols)
+        x,y = pxrdsim_torch(
                         G_latt_vol, spacegroup_symbol, AtomCoordinates, G_latt_consts, crystal_system,
                         grainsize, prefect_orientation, thermo_vibration, zero_shift,
                         dis_detector2sample,half_height_slit_detector,half_height_sample,
