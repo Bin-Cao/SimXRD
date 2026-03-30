@@ -2,9 +2,31 @@
 
 # SimXRD-4M [ICLR 2025](https://iclr.cc/virtual/2025/poster/28452)
 
-[![ICLR 2026](https://img.shields.io/badge/ICLR-OpenReview-4b44ce.svg)](https://openreview.net/forum?id=mkuB677eMM)
+<p align="center">
 
-## The Official Implementation of SimXRD | [Paper](https://openreview.net/forum?id=mkuB677eMM) | [DataBase](https://huggingface.co/AI4Spectro) | [Benchmark](https://github.com/compasszzn/XRDBench) 
+  <!-- ICLR -->
+  <a href="https://openreview.net/forum?id=mkuB677eMM">
+    <img src="https://img.shields.io/badge/ICLR-2026%20OpenReview-4b44ce?style=for-the-badge" />
+  </a>
+
+</p>
+
+<p align="center">
+
+  <!-- Links -->
+  <a href="https://openreview.net/forum?id=mkuB677eMM">
+    <img src="https://img.shields.io/badge/Paper-OpenReview-4b44ce?style=for-the-badge" />
+  </a>
+
+  <a href="https://huggingface.co/AI4Spectro">
+    <img src="https://img.shields.io/badge/Dataset-HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
+  </a>
+
+  <a href="https://github.com/compasszzn/XRDBench">
+    <img src="https://img.shields.io/badge/Benchmark-Code-blue?style=for-the-badge&logo=github" />
+  </a>
+
+</p>
 
 **Open Source:** SimXRD-4M is available on [Huggingface](https://huggingface.co/AI4Spectro).
 
