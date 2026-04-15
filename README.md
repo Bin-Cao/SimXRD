@@ -6,7 +6,7 @@
 
   <!-- ICLR -->
   <a href="https://openreview.net/forum?id=mkuB677eMM">
-    <img src="https://img.shields.io/badge/ICLR-2026%20OpenReview-4b44ce?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/ICLR-2025%20OpenReview-4b44ce?style=for-the-badge" />
   </a>
 
 </p>
