@@ -18,8 +18,8 @@
     <img src="https://img.shields.io/badge/Paper-OpenReview-4b44ce?style=for-the-badge" />
   </a>
 
-  <a href="https://huggingface.co/AI4Spectro">
-    <img src="https://img.shields.io/badge/Dataset-HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
+  <a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy81ZDg2MjYyMzg0NzBiNDllL0V1d09VMTNQM2JoSHNiU2lEMTRON3hZQmZCTEdCYTFjX0VhVkhrbGZUajRxZXc%5FZT0xa3liaFg&id=5D8626238470B49E%21s5d530eecddcf47b8b1b4a20f5e0def16&cid=5D8626238470B49E">
+    <img src="https://img.shields.io/badge/Dataset-HuggingFace-FFD21E?style=for-the-badge&logo=OneDrive&logoColor=black" />
   </a>
 
   <a href="https://github.com/compasszzn/XRDBench">
