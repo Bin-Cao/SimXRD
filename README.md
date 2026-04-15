@@ -18,17 +18,15 @@
     <img src="https://img.shields.io/badge/Paper-OpenReview-4b44ce?style=for-the-badge" />
   </a>
 
-  <a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy81ZDg2MjYyMzg0NzBiNDllL0V1d09VMTNQM2JoSHNiU2lEMTRON3hZQmZCTEdCYTFjX0VhVkhrbGZUajRxZXc%5FZT0xa3liaFg&id=5D8626238470B49E%21s5d530eecddcf47b8b1b4a20f5e0def16&cid=5D8626238470B49E">
-    <img src="https://img.shields.io/badge/Dataset-HuggingFace-FFD21E?style=for-the-badge&logo=OneDrive&logoColor=black" />
-  </a>
+<a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy81ZDg2MjYyMzg0NzBiNDllL0V1d09VMTNQM2JoSHNiU2lEMTRON3hZQmZCTEdCYTFjX0VhVkhrbGZUajRxZXc%5FZT0xa3liaFg&id=5D8626238470B49E%21s5d530eecddcf47b8b1b4a20f5e0def16&cid=5D8626238470B49E">
+  <img src="https://img.shields.io/badge/Dataset-OneDrive-0078D4?style=for-the-badge&logo=microsoft-onedrive&logoColor=white" />
+</a>
 
   <a href="https://github.com/compasszzn/XRDBench">
     <img src="https://img.shields.io/badge/Benchmark-Code-blue?style=for-the-badge&logo=github" />
   </a>
 
 </p>
-
-**Open Source:** SimXRD-4M is available on [Huggingface](https://huggingface.co/AI4Spectro).
 
 **Data Description:** Crystals are categorized into 230 space groups, each representing a distinct symmetry catrgory. XRD patterns, which correspond to the crystal structure, serve as vital tools for studying these materials. However, XRD patterns are influenced by various factors such as the testing environment (instrumentation), light source (X-ray), and sample characteristics (grain size, orientation, etc.). Consequently, they exhibit varying characteristics, including changes in intensity values, peak broadening, etc., posing challenges for accurate phase identification. This database aims to facilitate model training by providing diffraction spectrum data under diverse environmental conditions. The ultimate goal is for the model to accurately identify the correct space group based on XRD patterns.
 
