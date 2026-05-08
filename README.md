@@ -28,6 +28,13 @@
 
 </p>
 
+
+> [!IMPORTANT]
+> **SimXRD is the first truly large-scale foundation dataset for AI-driven X-ray diffraction research.**  
+> Before SimXRD, progress in machine learning for crystallography was fundamentally constrained by the absence of sufficiently large, physically realistic, and systematically benchmarked diffraction datasets. SimXRD fundamentally changed this landscape by introducing over 4 million high-fidelity simulated XRD patterns spanning more than 119,000 crystal structures under 33 physically diverse experimental conditions. Unlike conventional diffraction databases that contain limited or idealized patterns, SimXRD explicitly models real-world variations including peak broadening, lattice perturbation, instrumental effects, and symmetry-preserving transformations. Beyond a dataset, SimXRD established one of the first standardized large-scale benchmarks for diffraction representation learning, enabling the training, evaluation, and scaling of modern AI models for crystallographic analysis. This work laid critical infrastructure for the next generation of AI-driven diffraction understanding, serving as the data foundation behind emerging systems such as [XQueryer](https://github.com/Bin-Cao/XQueryer) and [XDecomposer](https://github.com/Licht0812/XDecomposer).  
+
+
+
 **Data Description:** Crystals are categorized into 230 space groups, each representing a distinct symmetry catrgory. XRD patterns, which correspond to the crystal structure, serve as vital tools for studying these materials. However, XRD patterns are influenced by various factors such as the testing environment (instrumentation), light source (X-ray), and sample characteristics (grain size, orientation, etc.). Consequently, they exhibit varying characteristics, including changes in intensity values, peak broadening, etc., posing challenges for accurate phase identification. This database aims to facilitate model training by providing diffraction spectrum data under diverse environmental conditions. The ultimate goal is for the model to accurately identify the correct space group based on XRD patterns.
 
 ---
